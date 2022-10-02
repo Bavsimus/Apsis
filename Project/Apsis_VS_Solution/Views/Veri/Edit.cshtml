@@ -1,0 +1,74 @@
+﻿@model Apsis_190421.Models.tablo
+
+@{
+    ViewData["Title"] = "Düzenle";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>⠀</h1>
+<hr />
+<div class="row">
+    <div class="container col-md-8 text-center">
+        <div class="align-items-center">
+            <div class="bannerw3-content mt-lg-5 mt-4">
+                <span class="title-small text-white-50">Düzenleme İşlemi</span>
+                <h3 class="mb-2 title text-white">
+                    <span>
+                        Apsis, <br class="text-white-50">bu ekranda verileri düzenlemenize yardımcı olacak.
+                    </span>
+                </h3>
+                <p class="mt-4 pr-lg-5 text-white-50">
+                    Verilerini düzenlemek istediğiniz kişinin ID numarasını
+                    <br />yazarak verilerinde değişiklik yapabilirsiniz.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-light">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label">ID</label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kisi_ad" class="control-label">İsim</label>
+                <input asp-for="Kisi_ad" class="form-control" />
+                <span asp-validation-for="Kisi_ad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kisi_soyad" class="control-label">Soyisim</label>
+                <input asp-for="Kisi_soyad" class="form-control" />
+                <span asp-validation-for="Kisi_soyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kisi_daire" class="control-label">Daire</label>
+                <input asp-for="Kisi_daire" class="form-control" />
+                <span asp-validation-for="Kisi_daire" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kisi_aidat" class="control-label">Aidat</label>
+                <input asp-for="Kisi_aidat" class="form-control" />
+                <span asp-validation-for="Kisi_aidat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kisi_aylik_durum" class="control-label">Aylık Durum</label>
+                <input asp-for="Kisi_aylik_durum" class="form-control" />
+                <span asp-validation-for="Kisi_aylik_durum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kisi_yillik_durum" class="control-label">Yıllık Durum</label>
+                <input asp-for="Kisi_yillik_durum" class="form-control" />
+                <span asp-validation-for="Kisi_yillik_durum" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Kaydet" class="btn btn-primary" asp-action="Edit" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-info" asp-controller="Account" asp-action="yonetici_arayuz">Tabloya Geri Dön.</a>
+</div>

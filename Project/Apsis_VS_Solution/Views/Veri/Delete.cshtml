@@ -1,0 +1,80 @@
+﻿@model Apsis_190421.Models.tablo
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>⠀</h1>
+
+<div class="row">
+    <div class="container col-md-8 text-center">
+        <div class="align-items-center">
+            <div class="bannerw3-content mt-lg-5 mt-4">
+                <span class="title-small text-white-50">Kayıt Silme İşlemi</span>
+                <h3 class="mb-2 title text-white">
+                    <span>
+                        Apsis, <br class="text-white-50">bu ekranda kayıt silmenizi sağlayacak.
+                    </span>
+                </h3>
+                <p class="mt-4 pr-lg-5 text-danger">
+                    Lütfen silme işlemlerinin
+                    <br />geri alınamayacağını unutmayınız.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr />
+        <dl class="row text-light">
+            <dt class="col-sm-2">
+                Id
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Id)
+            </dd>
+            <dt class="col-sm-2">
+                İsim
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kisi_ad)
+            </dd>
+            <dt class="col-sm-2">
+                Soyisim
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kisi_soyad)
+            </dd>
+            <dt class="col-sm-2">
+                Daire
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kisi_daire)
+            </dd>
+            <dt class="col-sm-2">
+                Aidat
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kisi_aidat)
+            </dd>
+            <dt class="col-sm-2">
+                Aylık Durum
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kisi_aylik_durum)
+            </dd>
+            <dt class="col-sm-2">
+                Yıllık Durum
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kisi_yillik_durum)
+            </dd>
+        </dl>
+        <form asp-action="Delete">
+            <input type="submit" value="Sil" class="btn btn-danger" />
+            <a class="btn btn-info" asp-controller="Account" asp-action="yonetici_arayuz">Tabloya Geri Dön.</a>
+        </form>
+        <div class="bg-danger">
+            @ViewData["sncmsj"]
+        </div>
+    </div>

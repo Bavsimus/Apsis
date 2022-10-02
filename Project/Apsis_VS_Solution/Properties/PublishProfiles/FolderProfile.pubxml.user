@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\talib\OneDrive\Masaüstü\web9</_PublishTargetUrl>
+    <History>True|2021-05-18T17:59:55.1805529Z;True|2021-05-18T20:57:25.7050586+03:00;True|2021-05-18T20:49:18.7169126+03:00;True|2021-05-18T20:42:10.5754559+03:00;True|2021-05-18T17:30:39.5873488+03:00;True|2021-05-18T17:24:05.3864317+03:00;False|2021-05-18T17:23:42.0364847+03:00;True|2021-05-18T17:08:51.8323399+03:00;True|2021-05-18T17:08:38.4602197+03:00;True|2021-05-18T16:50:23.8058386+03:00;True|2021-05-18T15:43:29.8339712+03:00;</History>
+  </PropertyGroup>
+</Project>

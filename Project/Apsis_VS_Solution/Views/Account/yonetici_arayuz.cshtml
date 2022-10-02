@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Apsis_190421.Models.tablo>
+
+@{
+    ViewData["Title"] = "Yönetici Arayüzü";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+<h1>⠀</h1>
+<div class="align-baseline">
+    <div>
+        <div class="text-right">
+            <a href='@Url.Action("Create", "Veri")' class="btn btn-info">Yeni Kayıt Ekle</a>
+        </div>
+    </div>
+    <hr />
+    <table class="table table-bordered table-dark table-hover text-light">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    İsim
+                </th>
+                <th>
+                    Soyisim
+                </th>
+                <th>
+                    Daire
+                </th>
+                <th>
+                    Aidat
+                </th>
+                <th>
+                    Aylık Durum
+                </th>
+                <th>
+                    Yıllık Durum
+                </th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kisi_ad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kisi_soyad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kisi_daire)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kisi_aidat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kisi_aylik_durum)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kisi_yillik_durum)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Sil", "Delete", "Veri", new { Id = item.Id }, new { @class = "btn btn-danger" })
+                        @Html.ActionLink("Düzenle ", "Edit", "Veri", new { Id = item.Id }, new { @class = "btn btn-info" })
+                        @Html.ActionLink("Detay ", "Details", "Veri", new { Id = item.Id }, new { @class = "btn btn-secondary" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

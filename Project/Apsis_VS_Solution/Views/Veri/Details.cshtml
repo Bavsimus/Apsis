@@ -1,0 +1,60 @@
+﻿@model Apsis_190421.Models.tablo
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>⠀</h1>
+
+<div>
+    <hr />
+    <dl class="row text-light">
+        <dt class = "col-sm-2">
+            Id
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            İsim
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kisi_ad)
+        </dd>
+        <dt class = "col-sm-2">
+            Soyisim
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kisi_soyad)
+        </dd>
+        <dt class = "col-sm-2">
+            Daire
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kisi_daire)
+        </dd>
+        <dt class = "col-sm-2">
+            Aidat
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kisi_aidat)
+        </dd>
+        <dt class = "col-sm-2">
+            Aylık Durum
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kisi_aylik_durum)
+        </dd>
+        <dt class = "col-sm-2">
+            Yıllık Durum
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kisi_yillik_durum)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Düzenle", "Edit", "Veri", new { Id = Model.Id}, new { @class="btn btn-danger"}) 
+    <a class="btn btn-info" asp-controller="Account" asp-action="yonetici_arayuz">Tabloya Geri Dön.</a>
+</div>

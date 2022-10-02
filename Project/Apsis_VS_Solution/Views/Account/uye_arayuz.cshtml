@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Kullanıcı Arayüzü";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+    
+    string[] DurumTablo = new string[]
+    {
+        "Ad"
+      , "Soyad"
+      , "Daire"
+      , "Aidat"
+      , "Aylık Durum"
+      , "Yıllık Durum"
+            };
+}
+<h1>⠀</h1>
+<h1>⠀</h1>
+<div class="table">
+    <table class="table table-bordered table-dark table-hover">
+        <thead>
+            <tr>
+                @{
+                    foreach (var baslik in DurumTablo)
+                    {
+                        <th>
+                            @baslik
+                        </th>
+                    }
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                if (Model != null)
+                {
+                    foreach (var tablo in Model)
+                    {
+                        <tr>
+                            <td>@tablo.Kisi_ad</td>
+                            <td>@tablo.Kisi_soyad</td>
+                            <td>@tablo.Kisi_daire</td>
+                            <td>@tablo.Kisi_aidat</td>
+                            <td>@tablo.Kisi_aylik_durum</td>
+                            <td>@tablo.Kisi_yillik_durum</td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>
