@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apsis_190421", "Apsis_190421.csproj", "{187D60A1-D1CB-4284-A9E1-2C44B23AB9E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{187D60A1-D1CB-4284-A9E1-2C44B23AB9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187D60A1-D1CB-4284-A9E1-2C44B23AB9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187D60A1-D1CB-4284-A9E1-2C44B23AB9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187D60A1-D1CB-4284-A9E1-2C44B23AB9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {222DB388-0A33-4AEE-AA97-43F292A912C4}
+	EndGlobalSection
+EndGlobal
